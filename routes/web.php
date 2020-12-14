@@ -26,7 +26,7 @@ Route::post('/books', [BooksController::class, 'store']);
 Route::patch('/books/{book}', [BooksController::class, 'update']);
 Route::delete('/books/{book}', [BooksController::class, 'destroy']);
 
-Route::post('/author', [AuthorsController::class, 'store']);
+Route::post('/authors', [AuthorsController::class, 'store']);
 Route::post('/checkout/{book}', [CheckoutBookController::class, 'store']);
 Route::post('/checkin/{book}', [CheckinBookController::class, 'store']);
 
